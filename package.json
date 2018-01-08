@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "test": "node test/test1.js"
+  },
   "dependencies": {
+    "mongoose": "^4.13.9",
     "puppeteer": "^0.13.0"
   }
 }
