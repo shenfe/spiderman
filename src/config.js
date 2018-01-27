@@ -1,12 +1,14 @@
 module.exports = {
     entry: 'http://zhihu.com',
     cookie: '',
-    pages: {
+    page: {
         user: '(?:.*?)zhihu.com/people/(.*?)/(?:.*)',
         question: '(?:.*?)zhihu.com/question/(\\d+)(?:.*)',
-        answer: {
-            author: '',
-            url: '(?:.*?)zhihu.com/question/(?:\\d+)/answer/(\\d+)(?:.*)'
-        }
+        answer: '(?:.*?)zhihu.com/question/(?:\\d+)/answer/(\\d+)(?:.*)'
+    },
+    type: {
+        user: async () => {},
+        question: async () => {},
+        answer: async () => {}
     }
 };
